@@ -1,0 +1,26 @@
+{
+  "name": "estructura",
+  "version": "1.0.0",
+  "description": "Backend estructura",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run": "node index.js"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Julio-Cesar-Flores/estructura.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Julio-Cesar-Flores/estructura/issues"
+  },
+  "homepage": "https://github.com/Julio-Cesar-Flores/estructura#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "mongoose": "^6.5.2"
+  }
+}
