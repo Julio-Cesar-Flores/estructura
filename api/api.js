@@ -1,4 +1,5 @@
 import express from "express";
+import bookRoutes from './routers/bookRoutes.js'
 
 const api = express();
 
@@ -7,5 +8,7 @@ api.get("/status", (req, res) => {
     msg: "API en línea y funcionando",
   });
 });
+
+api.use(bookRoutes)
 
 export default api;
