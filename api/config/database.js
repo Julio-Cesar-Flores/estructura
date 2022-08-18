@@ -1,4 +1,5 @@
 import mongoose from "mongoose";
+import config from "./index.js";
 
 const db = mongoose.connection;
 
@@ -23,5 +24,5 @@ mongoose.connect("mongodb://localhost/library", async () => {
 });*/
 
 export default () => {
-  mongoose.connect("mongodb://localhost/library");
+  mongoose.connect(config.database.uri);
 };
