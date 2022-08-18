@@ -4,12 +4,13 @@ const createBook = async (req, res) => {
   try {
     const newBook = await Book.create(req.body);
     return res.json({
-      msg: "todos libros",
+      msg: "libro creado",
       book: newBook,
     });
   } catch (error) {
     return res.json({
       msg: "error al crear el libro",
+      error
     });
   }
 };

@@ -1,7 +1,8 @@
 import express from "express";
-import bookRoutes from './routers/bookRoutes.js'
+import bookRoutes from "./routers/bookRoutes.js";
 
 const api = express();
+api.use(express.json());
 
 api.get("/status", (req, res) => {
   return res.json({
@@ -9,6 +10,6 @@ api.get("/status", (req, res) => {
   });
 });
 
-api.use(bookRoutes)
+api.use(bookRoutes);
 
 export default api;
