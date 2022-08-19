@@ -13,7 +13,7 @@ const schema = new mongoose.Schema({
   printingDate: Date,
   pages: Number,
   isbn: String,
-  coverange: String,
+  coverage: String,
 });
 
 export default mongoose.model("Book", schema);

@@ -24,5 +24,8 @@ mongoose.connect("mongodb://localhost/library", async () => {
 });*/
 
 export default () => {
+  /*
+  if testing conect to an other database or memory db
+  */
   mongoose.connect(config.database.uri);
 };

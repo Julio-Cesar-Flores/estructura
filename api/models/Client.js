@@ -1,17 +1,10 @@
 import mongoose from "mongoose";
 
 const schema = new mongoose.Schema({
-  name: {
-    type: String,
-    required: true,
-  },
-  dateOfBirth: Date,
+  name: String,
+  birthday: Date,
   age: Number,
-  adresses: [
-    {
-      type: String,
-    },
-  ],
+  adresses: [String],
   references: [
     {
       name: String,

@@ -1,11 +1,13 @@
 import { Router } from "express";
 import * as clientController from "../controllers/clientController.js";
+import createClientValidator from "../middlewares/createClientValidator.js";
+
 const router = Router();
 
 router
   .route("/clients")
   .get(clientController.getAllClients)
-  .post(clientController.createClient);
+  .post(createClientValidator, clientController.createClient);
 
 router
   .route("/clients/:id")

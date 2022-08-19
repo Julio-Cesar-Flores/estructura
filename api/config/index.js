@@ -8,6 +8,9 @@ export default {
     uri: process.env.DB_URI,
   },
   server: {
-    port: process.env.PORT,
+    port: process.env.PORT || 3000,
+  },
+  jwt: {
+    secret: process.env.JWT_SECRET,
   },
 };
